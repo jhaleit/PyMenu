@@ -29,7 +29,8 @@ def loadGameList():
             for line in lines:
                 try:
                     res = line.split("|")
-                    gameList[res[1].strip() + ".zip"] = res[3].strip()    
+                    gameList[res[1].strip() + ".zip"] = res[3].strip() 
+                    gameList[res[1].strip() + ".fba"] = res[3].strip()
                 except Exception as ex:
                      print("Error adding game to list: " + line)               
 
